@@ -5653,17 +5653,6 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        出站标签命名
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
         字段
       
     </span>
@@ -5700,7 +5689,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
         本地字段
@@ -5728,7 +5717,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
         远程字段
@@ -5800,7 +5789,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
         过滤字段
@@ -5872,7 +5861,57 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        重命名字段
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="重命名字段">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rename" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        rename
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        示例：直接重命名
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        示例：替换管道 + 模板重命名
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
       
         健康检查字段
@@ -5933,7 +5972,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
+  <a href="#_12" class="md-nav__link">
     <span class="md-ellipsis">
       
         覆盖拨号器字段
@@ -6018,8 +6057,10 @@
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="nt">&quot;excludes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
 <a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">  </span><span class="nt">&quot;include_regex&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
 <a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">  </span><span class="nt">&quot;exclude_regex&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">  </span><span class="nt">&quot;exclude_types&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="p">}</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">  </span><span class="nt">&quot;exclude_types&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">  </span><span class="nt">&quot;rename&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="p">}</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -6042,18 +6083,16 @@
 <a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">  </span><span class="nt">&quot;excludes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
 <a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">  </span><span class="nt">&quot;include_regex&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
 <a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">  </span><span class="nt">&quot;exclude_regex&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">  </span><span class="nt">&quot;exclude_types&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
-<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="p">}</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">  </span><span class="nt">&quot;exclude_types&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">  </span><span class="nt">&quot;rename&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="p">}</span>
 </code></pre></div>
 </div>
 </div>
 </div>
 <h3 id="_3">提供者内容格式</h3>
-<p>提供者支持两种内容格式：</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">sing-box JSON</label><label for="__tabbed_2_2">URI 列表</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>标准 sing-box 出站配置：</p>
+<p>提供者内容必须为 sing-box JSON 格式（也接受 base64 编码的 JSON）：</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">&quot;outbounds&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="p">{</span>
@@ -6075,46 +6114,19 @@
 <a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">  </span><span class="p">]</span>
 <a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="p">}</span>
 </code></pre></div>
-</div>
-<div class="tabbed-block">
-<p>每行一个 URI：</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>ss://YWVzLTI1Ni1nY206cGFzc3dvcmQ@1.2.3.4:8388#HK-01
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>vmess://eyJ2IjoiMiIsInBzIjoiSlAtMDEiLCJhZGQiOiI1LjYuNy44IiwicG9ydCI6NDQzfQ==
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>trojan://password@server:443?sni=example.com#US-01
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>vless://uuid@server:443?type=ws&amp;path=/ws#TW-01
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>hysteria2://password@server:443?sni=example.com#SG-01
-</code></pre></div>
-<p>支持的 URI 格式：</p>
-<ul>
-<li><code>ss://</code> - Shadowsocks (SIP002 / 旧格式)</li>
-<li><code>vmess://</code> - VMess (v2rayN 格式)</li>
-<li><code>vless://</code> - VLESS</li>
-<li><code>trojan://</code> - Trojan</li>
-<li><code>hysteria://</code> - Hysteria</li>
-<li><code>hysteria2://</code> / <code>hy2://</code> - Hysteria2</li>
-<li><code>tuic://</code> - TUIC</li>
-<li><code>socks5://</code> / <code>socks://</code> - SOCKS5</li>
-<li><code>http://</code> / <code>https://</code> - HTTP 代理</li>
-</ul>
-</div>
-</div>
-</div>
-<h3 id="_4">出站标签命名</h3>
-<p>提供者创建的出站使用格式 <code>{provider_tag}/{outbound_tag}</code>。</p>
-<p>例如，如果提供者标签是 <code>subscription</code>，出站标签是 <code>hk-01</code>，
-最终标签将是 <code>subscription/hk-01</code>。</p>
-<h3 id="_5">字段</h3>
+<p>也接受裸 JSON 数组 <code>[{...}, {...}]</code>。</p>
+<h3 id="_4">字段</h3>
 <h4 id="type">type</h4>
 <p><mark>必填</mark></p>
 <p>提供者类型，<code>file</code> 或 <code>http</code>。</p>
 <h4 id="tag">tag</h4>
 <p><mark>必填</mark></p>
 <p>提供者的标签。</p>
-<h3 id="_6">本地字段</h3>
+<h3 id="_5">本地字段</h3>
 <h4 id="path">path</h4>
 <p><mark>必填</mark></p>
 <p>提供者文件的路径。</p>
-<h3 id="_7">远程字段</h3>
+<h3 id="_6">远程字段</h3>
 <h4 id="url">url</h4>
 <p><mark>必填</mark></p>
 <p>下载提供者内容的 URL。</p>
@@ -6128,8 +6140,8 @@
 <p>默认使用 <code>24h</code>。</p>
 <h4 id="user_agent">user_agent</h4>
 <p>自定义 HTTP 请求的 User-Agent。</p>
-<p>如果为空，将使用默认的 <code>sing-box/{version}</code>。</p>
-<h3 id="_8">过滤字段</h3>
+<p>如果为空，将使用默认的 <code>SFM/{version}</code>。</p>
+<h3 id="_7">过滤字段</h3>
 <h4 id="includes">includes</h4>
 <p>字符串列表。仅包含标签包含这些字符串的出站。</p>
 <h4 id="excludes">excludes</h4>
@@ -6141,15 +6153,80 @@
 <h4 id="exclude_types">exclude_types</h4>
 <p>用管道符分隔的出站类型列表，用于排除。</p>
 <p>示例：<code>shadowsocks|http|socks</code></p>
-<h3 id="_9">健康检查字段</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">{</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="nt">&quot;health_check&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="nt">&quot;enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://www.gstatic.com/generate_204&quot;</span><span class="p">,</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">    </span><span class="nt">&quot;interval&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;10m&quot;</span><span class="p">,</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">    </span><span class="nt">&quot;tolerance&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">  </span><span class="p">}</span>
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="p">}</span>
+<h3 id="_8">重命名字段</h3>
+<h4 id="rename">rename</h4>
+<p>重命名规则列表。规则按顺序依次应用于每个出站标签。
+每条规则包含 <code>match</code>（正则表达式）和 <code>replace</code> 或 <code>rename</code> 之一：</p>
+<ul>
+<li><strong>替换模式</strong>（<code>match</code> + <code>replace</code>）：正则替换，<strong>不停止</strong>，继续后续规则。用于管道式预处理。</li>
+<li><strong>模板模式</strong>（<code>match</code> + <code>rename</code>）：正则捕获 + 模板展开，命中后<strong>停止</strong>。用于最终输出格式。</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nt">&quot;rename&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;match&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Hong Kong\\s*\\d*&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;replace&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;HKG&quot;</span><span class="w"> </span><span class="p">},</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;match&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Japan\\s*\\d*&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;replace&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;TYO&quot;</span><span class="w"> </span><span class="p">},</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;match&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;(.{2})(.+?)\\s*\\|\\s*(.+)&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;rename&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{1}{2} {n} · {3} ({tag})&quot;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span><span class="p">]</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="p">}</span>
+</code></pre></div>
+<p><code>rename</code> 模板变量：</p>
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>{0}</code></td>
+<td>正则完整匹配</td>
+</tr>
+<tr>
+<td><code>{1}</code>, <code>{2}</code>, ...</td>
+<td>捕获组</td>
+</tr>
+<tr>
+<td><code>{n}</code></td>
+<td>当前 rename 规则的自增编号，零填充两位（<code>01</code>, <code>02</code>, ...）</td>
+</tr>
+<tr>
+<td><code>{tag}</code></td>
+<td>Provider 标签</td>
+</tr>
+<tr>
+<td><code>{type}</code></td>
+<td>出站协议类型</td>
+</tr>
+</tbody>
+</table>
+<p>每条 <code>rename</code> 规则拥有独立的计数器，每次加载提供者内容时重置。</p>
+<h4 id="_9">示例：直接重命名</h4>
+<p>适用于 <code>深圳电信 → 香港 Enterprise α</code> 风格的节点名：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nt">&quot;rename&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;match&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^(.+?)\\s*→.*香港&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;rename&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;🇭🇰HKG {n} · {1} ({tag})&quot;</span><span class="w"> </span><span class="p">},</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;match&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^(.+?)\\s*→.*东京&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;rename&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;🇯🇵TYO {n} · {1} ({tag})&quot;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="p">]</span>
+</code></pre></div>
+<p>结果：<code>深圳电信 → 香港 Enterprise α</code> → <code>🇭🇰HKG 01 · 深圳电信 (v2paw)</code></p>
+<h4 id="_10">示例：替换管道 + 模板重命名</h4>
+<p>适用于 <code>🇭🇰Hong Kong 05 | Lain</code> 风格的节点名：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nt">&quot;rename&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;match&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Hong Kong\\s*\\d*&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;replace&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;HKG&quot;</span><span class="w"> </span><span class="p">},</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;match&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Japan\\s*\\d*&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;replace&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;TYO&quot;</span><span class="w"> </span><span class="p">},</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;match&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;(.{2})(.+?)\\s*\\|\\s*([^|]+?)\\s*(?:\\|.*)?$&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;rename&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{1}{2} {n} · {3} ({tag})&quot;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="p">]</span>
+</code></pre></div>
+<p>结果：<code>🇭🇰Hong Kong 05 | Lain</code> → 替换后: <code>🇭🇰HKG | Lain</code> → 重命名: <code>🇭🇰HKG 01 · Lain (skyteam)</code></p>
+<h3 id="_11">健康检查字段</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">{</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="nt">&quot;health_check&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="nt">&quot;enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://www.gstatic.com/generate_204&quot;</span><span class="p">,</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="nt">&quot;interval&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;10m&quot;</span><span class="p">,</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">    </span><span class="nt">&quot;tolerance&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="p">}</span>
 </code></pre></div>
 <h4 id="health_checkenabled">health_check.enabled</h4>
 <p>启用健康检查。</p>
@@ -6159,14 +6236,14 @@
 <p>健康检查间隔。默认使用 <code>10m</code>。</p>
 <h4 id="health_checktolerance">health_check.tolerance</h4>
 <p>容差，以毫秒为单位。</p>
-<h3 id="_10">覆盖拨号器字段</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">{</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="nt">&quot;override_dialer&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="nt">&quot;tcp_fast_open&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="nt">&quot;tcp_multi_path&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="nt">&quot;udp_fragment&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">  </span><span class="p">}</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="p">}</span>
+<h3 id="_12">覆盖拨号器字段</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">{</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="nt">&quot;override_dialer&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="nt">&quot;tcp_fast_open&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="nt">&quot;tcp_multi_path&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span><span class="nt">&quot;udp_fragment&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="p">}</span>
 </code></pre></div>
 <p>覆盖此提供者中所有出站的拨号器选项。</p>
 <h4 id="override_dialertcp_fast_open">override_dialer.tcp_fast_open</h4>

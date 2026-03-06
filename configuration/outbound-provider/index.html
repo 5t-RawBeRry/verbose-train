@@ -5650,17 +5650,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#outbound-tag-naming" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Outbound Tag Naming
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#fields" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -5872,6 +5861,56 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#rename-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rename Fields
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Rename Fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rename" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        rename
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-direct-rename" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example: Direct rename
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-replace-pipeline-rename-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example: Replace pipeline + rename template
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#health-check-fields" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -6022,8 +6061,10 @@ Providers support automatic updates, health checks, and subscription info parsin
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="nt">&quot;excludes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
 <a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">  </span><span class="nt">&quot;include_regex&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
 <a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">  </span><span class="nt">&quot;exclude_regex&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">  </span><span class="nt">&quot;exclude_types&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="p">}</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">  </span><span class="nt">&quot;exclude_types&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">  </span><span class="nt">&quot;rename&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="p">}</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
@@ -6046,18 +6087,16 @@ Providers support automatic updates, health checks, and subscription info parsin
 <a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">  </span><span class="nt">&quot;excludes&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
 <a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">  </span><span class="nt">&quot;include_regex&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
 <a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">  </span><span class="nt">&quot;exclude_regex&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">  </span><span class="nt">&quot;exclude_types&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
-<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="p">}</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">  </span><span class="nt">&quot;exclude_types&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">  </span><span class="nt">&quot;rename&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[]</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="p">}</span>
 </code></pre></div>
 </div>
 </div>
 </div>
 <h3 id="provider-content-format">Provider Content Format</h3>
-<p>Providers support two content formats:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">sing-box JSON</label><label for="__tabbed_2_2">URI List</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>Standard sing-box outbound configuration:</p>
+<p>Provider content must be sing-box JSON format (base64-encoded JSON is also accepted):</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="nt">&quot;outbounds&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="p">{</span>
@@ -6079,34 +6118,7 @@ Providers support automatic updates, health checks, and subscription info parsin
 <a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">  </span><span class="p">]</span>
 <a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="p">}</span>
 </code></pre></div>
-</div>
-<div class="tabbed-block">
-<p>One URI per line:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>ss://YWVzLTI1Ni1nY206cGFzc3dvcmQ@1.2.3.4:8388#HK-01
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>vmess://eyJ2IjoiMiIsInBzIjoiSlAtMDEiLCJhZGQiOiI1LjYuNy44IiwicG9ydCI6NDQzfQ==
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>trojan://password@server:443?sni=example.com#US-01
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>vless://uuid@server:443?type=ws&amp;path=/ws#TW-01
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>hysteria2://password@server:443?sni=example.com#SG-01
-</code></pre></div>
-<p>Supported URI schemes:</p>
-<ul>
-<li><code>ss://</code> - Shadowsocks (SIP002 / legacy)</li>
-<li><code>vmess://</code> - VMess (v2rayN format)</li>
-<li><code>vless://</code> - VLESS</li>
-<li><code>trojan://</code> - Trojan</li>
-<li><code>hysteria://</code> - Hysteria</li>
-<li><code>hysteria2://</code> / <code>hy2://</code> - Hysteria2</li>
-<li><code>tuic://</code> - TUIC</li>
-<li><code>socks5://</code> / <code>socks://</code> - SOCKS5</li>
-<li><code>http://</code> / <code>https://</code> - HTTP Proxy</li>
-</ul>
-</div>
-</div>
-</div>
-<h3 id="outbound-tag-naming">Outbound Tag Naming</h3>
-<p>Outbounds created by providers use the format <code>{provider_tag}/{outbound_tag}</code>.</p>
-<p>For example, if provider tag is <code>subscription</code> and outbound tag is <code>hk-01</code>,
-the final tag will be <code>subscription/hk-01</code>.</p>
+<p>A bare JSON array <code>[{...}, {...}]</code> is also accepted.</p>
 <h3 id="fields">Fields</h3>
 <h4 id="type">type</h4>
 <p><mark>Required</mark></p>
@@ -6132,7 +6144,7 @@ the final tag will be <code>subscription/hk-01</code>.</p>
 <p><code>24h</code> will be used if empty.</p>
 <h4 id="user_agent">user_agent</h4>
 <p>Custom User-Agent for HTTP requests.</p>
-<p>Default <code>sing-box/{version}</code> will be used if empty.</p>
+<p>Default <code>SFM/{version}</code> will be used if empty.</p>
 <h3 id="filter-fields">Filter Fields</h3>
 <h4 id="includes">includes</h4>
 <p>List of strings. Only include outbounds whose tag contains any of these strings.</p>
@@ -6145,15 +6157,80 @@ the final tag will be <code>subscription/hk-01</code>.</p>
 <h4 id="exclude_types">exclude_types</h4>
 <p>Pipe-separated list of outbound types to exclude.</p>
 <p>Example: <code>shadowsocks|http|socks</code></p>
+<h3 id="rename-fields">Rename Fields</h3>
+<h4 id="rename">rename</h4>
+<p>List of rename rules. Rules are applied sequentially to each outbound tag.
+Each rule has a <code>match</code> field (regex) and either <code>replace</code> or <code>rename</code>:</p>
+<ul>
+<li><strong>Replace mode</strong> (<code>match</code> + <code>replace</code>): Regex substitution. Does <strong>not</strong> stop — continues to next rule. Use for pipeline preprocessing.</li>
+<li><strong>Template mode</strong> (<code>match</code> + <code>rename</code>): Regex capture + template expansion. <strong>Stops</strong> after match. Use for final output format.</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="nt">&quot;rename&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;match&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Hong Kong\\s*\\d*&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;replace&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;HKG&quot;</span><span class="w"> </span><span class="p">},</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;match&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Japan\\s*\\d*&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;replace&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;TYO&quot;</span><span class="w"> </span><span class="p">},</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;match&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;(.{2})(.+?)\\s*\\|\\s*(.+)&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;rename&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{1}{2} {n} · {3} ({tag})&quot;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span><span class="p">]</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="p">}</span>
+</code></pre></div>
+<p>Template variables for <code>rename</code>:</p>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>{0}</code></td>
+<td>Full regex match</td>
+</tr>
+<tr>
+<td><code>{1}</code>, <code>{2}</code>, ...</td>
+<td>Capture groups</td>
+</tr>
+<tr>
+<td><code>{n}</code></td>
+<td>Auto-increment counter per rename rule, zero-padded to 2 digits (<code>01</code>, <code>02</code>, ...)</td>
+</tr>
+<tr>
+<td><code>{tag}</code></td>
+<td>Provider tag</td>
+</tr>
+<tr>
+<td><code>{type}</code></td>
+<td>Outbound protocol type</td>
+</tr>
+</tbody>
+</table>
+<p>Each <code>rename</code> rule has its own independent counter, reset on every provider load.</p>
+<h4 id="example-direct-rename">Example: Direct rename</h4>
+<p>For provider nodes like <code>深圳电信 → 香港 Enterprise α</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nt">&quot;rename&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;match&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^(.+?)\\s*→.*香港&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;rename&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;🇭🇰HKG {n} · {1} ({tag})&quot;</span><span class="w"> </span><span class="p">},</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;match&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;^(.+?)\\s*→.*东京&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;rename&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;🇯🇵TYO {n} · {1} ({tag})&quot;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="p">]</span>
+</code></pre></div>
+<p>Result: <code>深圳电信 → 香港 Enterprise α</code> → <code>🇭🇰HKG 01 · 深圳电信 (v2paw)</code></p>
+<h4 id="example-replace-pipeline-rename-template">Example: Replace pipeline + rename template</h4>
+<p>For provider nodes like <code>🇭🇰Hong Kong 05 | Lain</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nt">&quot;rename&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;match&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Hong Kong\\s*\\d*&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;replace&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;HKG&quot;</span><span class="w"> </span><span class="p">},</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;match&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Japan\\s*\\d*&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;replace&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;TYO&quot;</span><span class="w"> </span><span class="p">},</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;match&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;(.{2})(.+?)\\s*\\|\\s*([^|]+?)\\s*(?:\\|.*)?$&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;rename&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;{1}{2} {n} · {3} ({tag})&quot;</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="p">]</span>
+</code></pre></div>
+<p>Result: <code>🇭🇰Hong Kong 05 | Lain</code> → replace: <code>🇭🇰HKG | Lain</code> → rename: <code>🇭🇰HKG 01 · Lain (skyteam)</code></p>
 <h3 id="health-check-fields">Health Check Fields</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">{</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="nt">&quot;health_check&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="nt">&quot;enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://www.gstatic.com/generate_204&quot;</span><span class="p">,</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">    </span><span class="nt">&quot;interval&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;10m&quot;</span><span class="p">,</span>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">    </span><span class="nt">&quot;tolerance&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">  </span><span class="p">}</span>
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">{</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="nt">&quot;health_check&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">    </span><span class="nt">&quot;enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://www.gstatic.com/generate_204&quot;</span><span class="p">,</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="nt">&quot;interval&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;10m&quot;</span><span class="p">,</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">    </span><span class="nt">&quot;tolerance&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="p">}</span>
 </code></pre></div>
 <h4 id="health_checkenabled">health_check.enabled</h4>
 <p>Enable health check.</p>
@@ -6164,13 +6241,13 @@ the final tag will be <code>subscription/hk-01</code>.</p>
 <h4 id="health_checktolerance">health_check.tolerance</h4>
 <p>Tolerance in milliseconds.</p>
 <h3 id="override-dialer-fields">Override Dialer Fields</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">{</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="nt">&quot;override_dialer&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="nt">&quot;tcp_fast_open&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="nt">&quot;tcp_multi_path&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="nt">&quot;udp_fragment&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">  </span><span class="p">}</span>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">{</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="nt">&quot;override_dialer&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="nt">&quot;tcp_fast_open&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="nt">&quot;tcp_multi_path&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span><span class="nt">&quot;udp_fragment&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="p">}</span>
 </code></pre></div>
 <p>Override dialer options for all outbounds in this provider.</p>
 <h4 id="override_dialertcp_fast_open">override_dialer.tcp_fast_open</h4>
